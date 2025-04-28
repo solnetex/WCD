@@ -5,27 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You - World Cyber Defense</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-
-    <!-- Logo at the top left that links to main page -->
-    <div class="logo">
-        <a href="https://wcd.solnetex.com">
-            <img src="LogoTrans.png" alt="Logo" width="150">
-        </a>
-    </div>
-
-    <!-- Main content with gradient "Thank You" -->
-    <div class="thank-you-container">
-        <h1 class="thank-you-text">Thank You For Reporting</h1>
-        <p class="message">You have just helped the world by reporting a cyber threat. Your action is vital for a safer
-            digital world.</p>
-
-        <!-- Button to go back to the main page -->
-        <a href="https://wcd.solnetex.com" class="go-back-button">Go Back</a>
-    </div>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         /* Basic Reset */
         * {
@@ -64,6 +44,7 @@
             text-align: center;
             color: #fff;
             z-index: 1;
+            padding: 20px;
         }
 
         /* Huge Thank You Text */
@@ -100,7 +81,70 @@
             background-color: #f9e0e7;
             color: #1A1A1A;
         }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .logo {
+                display: none;
+            }
+
+            .thank-you-container {
+                padding: 15px;
+            }
+
+            .thank-you-text {
+                font-size: 2.5em;
+                margin-bottom: 15px;
+            }
+
+            .message {
+                font-size: 1em;
+                margin-bottom: 30px;
+            }
+
+            .go-back-button {
+                padding: 12px 25px;
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .thank-you-container {
+                padding: 10px;
+            }
+
+            .thank-you-text {
+                font-size: 2em;
+                margin-bottom: 10px;
+                Burren
+            }
+
+            .message {
+                font-size: 0.9em;
+                margin-bottom: 20px;
+            }
+
+            .go-back-button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
     </style>
+</head>
+
+<body>
+    <div class="logo">
+        <a href="https://wcd.solnetex.com">
+            <img src="LogoTrans.png" alt="Logo" width="150">
+        </a>
+    </div>
+
+    <div class="thank-you-container">
+        <h1 class="thank-you-text">Thank You For Reporting</h1>
+        <p class="message">You have just helped the world by reporting a cyber threat. Your action is vital for a safer
+            digital world.</p>
+        <a href="https://wcd.solnetex.com" class="go-back-button">Go Back</a>
+    </div>
 </body>
 
 </html>
