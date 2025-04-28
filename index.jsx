@@ -187,7 +187,7 @@ const MicroLearnLandingPage = () => {
               <p>Protect the Internet</p>
             </div>
           </div>
-          <a href="https://forms.gle/gfnUaF9u2PvNXAWg8" className="btn-primary">Apply Now</a>
+          <a href="https://forms.gle/gfnUaF9u2PvNXAWg8" className="btn-primary" target="_blank">Apply Now</a>
         </div>
         <div className="educator-image glass-card hidden">
           <div className="placeholder-image"></div>
