@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cyber Defense</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="root"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script type="text/babel" src="index.jsx"></script>
+    <script type="text/babel" src="index1.js"></script>
+    <div id="circle"></div>
+</body>
+
+<script>
+    let scrollVelocity = 0; // The scroll speed
+    let isScrolling = false; // Flag to control the scroll effect
+
+    // Function to handle the scroll momentum effect
+    function glideScroll(event) {
+        event.preventDefault(); // Prevent the default scroll behavior
+
+        // Adjust the scroll velocity based on the scroll direction (deltaY)
+        const delta = event.deltaY;
+
+        // Increase or decrease the velocity based on the scroll direction
+        scrollVelocity += delta * 0.09; // Control the speed of the effect
+
+        // Start the animation to apply the momentum
+        if (!isScrolling) {
+            isScrolling = true;
+            requestAnimationFrame(scrollMomentum); // Trigger animation
+        }
+    }
+
+    // Function to apply the scroll momentum over time
+    function scrollMomentum() {
+        window.scrollBy(0, scrollVelocity); // Scroll the page by the current velocity
+
+        // Gradually slow down the velocity to simulate friction
+        if (Math.abs(scrollVelocity) > 0.1) {
+            scrollVelocity *= 0.92; // Apply friction to the velocity
+            requestAnimationFrame(scrollMomentum); // Continue the animation
+        } else {
+            isScrolling = false; // Stop the animation when the velocity is small enough
+        }
+    }
+
+    // Attach the wheel event listener to the window
+    window.addEventListener('wheel', glideScroll, { passive: false });
+</script>
+
+</html>

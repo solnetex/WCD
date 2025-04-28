@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cyber Defense</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Google Fonts link for Quicksand font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Logo at the top left -->
+    <div class="logo">
+        <img src="WCDtransparent.png" alt="Logo" width="150">
+    </div>
+
+    <div class="form-container">
+        <form action="https://formsubmit.co/itssswooshydog@gmail.com" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="_next" value="https://wcd.solnetex.com/ThankYou">
+            <label for="name">Name (Optional)</label>
+            <input type="text" name="name" id="name" placeholder="Your Name (Optional)">
+
+            <label for="email">Email (Optional)</label>
+            <input type="email" name="email" id="email" placeholder="Your Email (Optional)">
+
+            <label for="problem">What's the problem?</label>
+            <textarea name="problem" id="problem" placeholder="Describe the attack or problem you're facing"
+                required></textarea>
+
+            <label for="evidence-links">Attach any evidence using links (Optional, but recommended)</label>
+            <input type="url" name="evidence-links" id="evidence-links"
+                placeholder="Attach evidence via links (Optional)">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+
+        function redirectBack() {
+            // Redirect back to the previous page after form submission
+            setTimeout(function () {
+                window.history.back();
+            }, 1000); // Delay of 1 second to allow the form submission to complete
+        }
+    </script>
+    </script>
+</body>
+
+</html>
+
+
+<style>
+    /* Basic Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Quicksand', sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        top: 0px;
+        left: 80px;
+        z-index: 2;
+        scale: 2;
+        /* Keeps logo on top of the form */
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        z-index: 1;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 40px auto;
+        width: 100%;
+        padding: 20px;
+        background-color: var(--card-bg);
+        border-radius: 30px;
+        background: linear-gradient(45deg, rgba(168, 76, 255, 0.2), rgba(255, 117, 124, 0.2));
+        font-family: 'Quicksand', sans-serif;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        /* Stacks the children vertically */
+        align-items: center;
+        /* Centers the children horizontally */
+        justify-content: center;
+        /* Ensures that content is centered vertically */
+    }
+
+
+    form label {
+        display: block;
+        margin-bottom: 5px;
+        text-align: center;
+        font-size: 1em;
+        color: var(--text-primary);
+    }
+
+    form input,
+    form textarea {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        background-color: rgba(85, 85, 85, 0.178);
+        color: var(--text-primary);
+        border: 1px solid var(--text-secondary);
+        resize: none;
+    }
+
+    form button {
+        width: 95%;
+        /* Button takes up 95% of the form width */
+        padding: 15px;
+        background: linear-gradient(45deg, rgba(163, 163, 163, 0.2), rgba(255, 255, 255, 0.2));
+        color: #4646464b;
+        border: 1px solid;
+        border-color: #4a4a4a36;
+        border-radius: 15px;
+        font-size: 2em;
+        cursor: pointer;
+        transition: background-color 0.6s ease, box-shadow 0.6s, color 0.6s;
+        margin-top: 20px;
+        /* Adds some space at the top */
+        text-align: center;
+        /* Centers the text inside the button */
+    }
+
+
+    form button:hover {
+        background-color: #f9e0e7;
+        color: #1A1A1A;
+    }
+</style>
