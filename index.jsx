@@ -129,7 +129,7 @@ const MicroLearnLandingPage = () => {
         <div className="steps">
           <div className="step hidden">
             <div className="step-number">1</div>
-            <h3>Report the threat or attack.</h3>
+            <h3>Report the threat or attack</h3>
             <p>Anonymously fill out the WCD Threat Report Form with clear details:
 
               Type of threat (e.g., phishing, ransomware, breach).
@@ -141,13 +141,13 @@ const MicroLearnLandingPage = () => {
 
           <div className="step hidden">
             <div className="step-number">2</div>
-            <h3>Attach Evidence (If Available)</h3>
+            <h3>Attach Evidence (If Available).</h3>
             <p>Upload any related screenshots, emails, or logs. The more evidence you provide, the faster and more accurately we can respond.</p>
           </div>
 
           <div className="step hidden">
             <div className="step-number">3</div>
-            <h3>Learn & Grow</h3>
+            <h3>We take action</h3>
             <p>A WCD analyst will review your case and contact you within 24 hours. We will provide next steps, security advice, and actively work to investigate, mitigate, and take down the threat whenever possible.</p>
           </div>
         </div>
